@@ -59,7 +59,7 @@ broker1.use.org.com:8080
 
 ###### REST
 
-{% endpoint GET /admin/brokers/:cluster %}
+{% endpoint GET /admin/v2/brokers/:cluster %}
 
 [More info](../../reference/RestApi#/admin/brokers/:cluster)
 
@@ -91,7 +91,7 @@ $ pulsar-admin brokers namespaces use \
 ```
 ###### REST
 
-{% endpoint GET /admin/brokers/:cluster/:broker:/ownedNamespaces %}
+{% endpoint GET /admin/v2/brokers/:cluster/:broker:/ownedNamespaces %}
 
 ###### Java
 
@@ -120,7 +120,7 @@ $ pulsar-admin brokers update-dynamic-config brokerShutdownTimeoutMs 100
 
 #### REST API
 
-{% endpoint POST /admin/brokers/configuration/:configName/:configValue %}
+{% endpoint POST /admin/v2/brokers/configuration/:configName/:configValue %}
 
 [More info](../../reference/RestApi#/admin/brokers/configuration/:configName/:configValue)
 
@@ -143,7 +143,7 @@ brokerShutdownTimeoutMs
 
 #### REST API
 
-{% endpoint GET /admin/brokers/configuration %}
+{% endpoint GET /admin/v2/brokers/configuration %}
 
 [More info](../../reference/RestApi#/admin/brokers/configuration)
 
@@ -166,7 +166,7 @@ brokerShutdownTimeoutMs:100
 
 #### REST API
 
-{% endpoint GET /admin/brokers/configuration/values %}
+{% endpoint GET /admin/v2/brokers/configuration/values %}
 
 [More info](../../reference/RestApi#/admin/brokers/configuration/values)
 
